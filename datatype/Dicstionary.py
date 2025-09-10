@@ -24,10 +24,23 @@ print(tea2)  # Output: {'name': 'aditya', 'base':'milk', 'price': 25}
 print(tea.values())
 
 
-# lastItem = tea.popitem()
-# print(f"the last item is : {lastItem}")
-# print(tea)  # Output: {'name': 'Tea', 'type': 'Beverage'}
+lastItem = tea.popitem()
+print(f"the last item is : {lastItem}")
+print(tea)  # Output: {'name': 'Tea', 'type': 'Beverage'}
 
 extraValues = {'sugar': 'yes', 'temperature': 'hot'}
 tea.update(extraValues)  # Merging another dictionary
 print(tea)  # Output: {'name': 'Tea', 'type': 'B
+
+
+#get the value if it is not present then return default value
+newTea = tea.get("chat","default value")
+print(newTea)  # Output: Tea
+
+
+
+#union and intersection in dicstionary 
+
+newTeaValues = tea.keys() & tea2.keys()
+print(f"the union of tea and tea2 is : {newTeaValues}")
+
