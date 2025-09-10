@@ -1,4 +1,4 @@
-device = "acti"
+device = "active"
 tempreture  = 20
 if device=="active":
     if tempreture > 35:
