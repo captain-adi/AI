@@ -44,5 +44,5 @@
 # From two lists, create a dictionary, but skip items where the mark is < 50:
 names = ["Aditya", "Ravi", "Neha"]
 marks = [85, 40, 95]
-newDist = {i:x if x > 50  for i in names for x in marks}
+newDist = {name:mark if mark> 50 else "fail" for name, mark in zip(names,marks)}
 print(newDist)
