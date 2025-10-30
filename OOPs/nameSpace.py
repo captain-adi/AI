@@ -4,7 +4,7 @@ class Tea:
         print(f"my name is aditya pandey and i am from {Tea.origin}")
 
 
-Tea.isHot = True
+Tea.isHot = True         # adding new properties 
 #create object
 
 obj = Tea()
